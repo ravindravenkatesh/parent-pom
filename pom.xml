@@ -11,6 +11,7 @@
 	<groupId>com.parts-management</groupId>
 	<artifactId>parent-pom</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name/>
 	<description/>
 	<url/>
@@ -32,6 +33,7 @@
 		<flyway-core.version>11.11.0</flyway-core.version>
 		<postgres-driver.version>42.7.7</postgres-driver.version>
 		<h2-driver.version>2.3.232</h2-driver.version>
+		<openapi-maven.version>7.21.0</openapi-maven.version>
 	</properties>
 
 	<dependencyManagement>
@@ -174,7 +176,7 @@
 			<plugin>
 				<groupId>org.openapitools</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<version>7.21.0</version>
+				<version>${openapi-maven.version}</version>
 			</plugin>
 
 		</plugins>
