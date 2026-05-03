@@ -30,6 +30,7 @@
 	<properties>
 		<java.version>21</java.version>
 		<spring-boot.version>4.0.6</spring-boot.version>
+		<project-reactor.version>3.8.5</project-reactor.version>
 		<flyway-core.version>11.11.0</flyway-core.version>
 		<postgres-driver.version>42.7.7</postgres-driver.version>
 		<h2-driver.version>2.3.232</h2-driver.version>
@@ -62,6 +63,12 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-webmvc</artifactId>
 				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.projectreactor</groupId>
+				<artifactId>reactor-core</artifactId>
+				<version>${project-reactor.version}</version>
+				<scope>compile</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
